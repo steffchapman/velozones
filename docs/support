@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VeloZones – Support</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #f7f6f2;
+      color: #1a1a18;
+      min-height: 100vh;
+      padding: 2rem 1.25rem;
+    }
+
+    .wrap {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 3rem 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 3rem;
+    }
+
+    .logo-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: #1D9E75;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .logo-icon svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .logo-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: 20px;
+      color: #1a1a18;
+    }
+
+    .hero {
+      margin-bottom: 2.5rem;
+    }
+
+    .hero h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 36px;
+      font-weight: 400;
+      color: #1a1a18;
+      margin-bottom: 0.75rem;
+      line-height: 1.15;
+    }
+
+    .hero p {
+      font-size: 16px;
+      color: #5f5e5a;
+      line-height: 1.7;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 0.5px solid rgba(0,0,0,0.12);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .card-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: #888780;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 0.75rem;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #1a1a18;
+      line-height: 1.65;
+      margin-bottom: 1.25rem;
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .card strong {
+      font-weight: 500;
+    }
+
+    .email-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #1D9E75;
+      color: #ffffff;
+      text-decoration: none;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      padding: 0.65rem 1.25rem;
+      border-radius: 8px;
+      transition: background 0.15s ease;
+    }
+
+    .email-btn:hover {
+      background: #0F6E56;
+    }
+
+    .email-btn svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+
+    hr {
+      border: none;
+      border-top: 0.5px solid rgba(0,0,0,0.1);
+      margin: 2.5rem 0;
+    }
+
+    .footer {
+      font-size: 13px;
+      color: #888780;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body { background: #1a1a18; color: #f0ede6; }
+      .logo-name { color: #f0ede6; }
+      .hero h1 { color: #f0ede6; }
+      .hero p { color: #888780; }
+      .card { background: #2c2c2a; border-color: rgba(255,255,255,0.1); }
+      .card p { color: #f0ede6; }
+      hr { border-color: rgba(255,255,255,0.1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9" stroke="white" stroke-width="1.5" fill="none"/>
+          <circle cx="12" cy="7" r="1.5" fill="white"/>
+          <path d="M9.5 17h5l-1.5-5h-2L9.5 17z" fill="white"/>
+          <path d="M8 14.5l1.5-2.5h5l1.5 2.5" stroke="white" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <span class="logo-name">VeloZones</span>
+    </div>
+
+    <div class="hero">
+      <h1>Support</h1>
+      <p>Need help with VeloZones? We're here for you.</p>
+    </div>
+
+    <div class="card">
+      <p class="card-label">Contact</p>
+      <p>For questions about the app, your Pro subscription, or anything else — reach out and we'll get back to you as soon as we can.</p>
+      <a href="mailto:steff.chapman@gmail.com" class="email-btn">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="white"/>
+        </svg>
+        steff.chapman@gmail.com
+      </a>
+    </div>
+
+    <div class="card">
+      <p class="card-label">Pro subscription</p>
+      <p>If you have a billing question or need to cancel your subscription, you can manage it directly in the Settings app on your iPhone under <strong>Apple ID → Subscriptions</strong>.</p>
+    </div>
+
+    <hr>
+    <p class="footer">VeloZones is an iOS app for power-based cycling training.</p>
+
+  </div>
+</body>
+</html>
